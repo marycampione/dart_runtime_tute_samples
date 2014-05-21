@@ -1,0 +1,19 @@
+application: dancing-chocolate
+version: 1
+runtime: dart
+vm: true
+api_version: 1
+threadsafe: true
+
+manual_scaling:
+  instances: 1
+
+handlers:
+
+## order matters
+
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /.*
+  script: bin/server.dart
