@@ -5,16 +5,20 @@ Code samples for a Dart tutorial.
 
 Setting up the example files (as opposed to setting up the runtime environment).
 
+Set up:
+-------
+
 * The main Dart source file must be named `server.dart`.
 
 * Set up these sample files at the outset
-    o `server.dart` (has hello_world.dart in it)
-    o `app.yaml`
-    o `pubspec.yaml` (with all libraries needed for every step)
+  - `server.dart` (has hello_world.dart in it)
+  - `app.yaml`
+  - `pubspec.yaml` (with all libraries needed for every step)
 
 * run `pub get`
 
-* Files in order of tutorial steps:
+Files in order of tutorial steps:
+---------------------------------
 
 * `hello_world.dart`, just displays "Hello, World!"
 
