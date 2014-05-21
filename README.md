@@ -7,10 +7,10 @@ Setting up the example files (as opposed to setting up the runtime environment).
 
 * The main Dart source file must be named `server.dart`.
 
-* Set up these sample files
-    `server.dart` (has hello_world.dart in it)
-    `app.yaml`
-    `pubspec.yaml` (with all libraries needed for every step)
+* Set up these sample files at the outset
+    o `server.dart` (has hello_world.dart in it)
+    o `app.yaml`
+    o `pubspec.yaml` (with all libraries needed for every step)
 
 * run `pub get`
 
