@@ -1,0 +1,10 @@
+name: test
+version: 0.1.0
+author: Dart Team
+dependencies:
+  appengine:
+    path: ../appengine
+  route: any
+  cloud_datastore:
+    path: ../cloud_datastore
+  mustache: any
