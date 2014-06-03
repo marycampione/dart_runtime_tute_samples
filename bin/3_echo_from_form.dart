@@ -1,4 +1,6 @@
-
+/*
+ * goes with docs/dart/handlingforms.html
+ */
 import 'package:appengine/appengine.dart';
 import 'dart:async';
 import 'dart:io';
@@ -23,17 +25,20 @@ serveSignBook(HttpRequest request) {
       dest.add(data.toString());
     },
     onDone: () { 
-      request.response.write('<html><body>You wrote:<pre>');
-      // XX: how to I get clean content?
-      request.response.write(dest);
-      request.response.write('</pre></body></html>');
-      request.response.close();
+      request.response
+        ..headers.contentType = new ContentType('text', 'html')
+        ..write('<html><body>You wrote:<pre>')
+          // XX: how to I get clean content?
+        ..write(dest)
+        ..write('</pre></body></html>')
+        ..close();
     });
 }
 
 serveMainPage(HttpRequest request) {
-  request.response.write(MAIN_PAGE_HTML);
-  request.response.close();
+  request.response
+    ..write(MAIN_PAGE_HTML)
+    ..close();
 }
 
 main() {
